@@ -83,7 +83,6 @@ a{
 }
 
 
-
 @media (min-width:768px) {
     html{
         font-size: 16px;
@@ -102,5 +101,16 @@ a{
     }
     .burger-menu{
         font-size: 1rem;
+    }
+}
+
+
+@media (min-width:1025px) {
+    html{
+        font-size: 16px;
+    }
+    .menu{
+        font-size: 1rem;
+        padding: 0px 50px;
     }
 }
