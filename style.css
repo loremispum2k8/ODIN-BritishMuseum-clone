@@ -72,8 +72,12 @@ a{
     align-items: start;
     cursor: pointer;
 }
+.menu-direction:hover h3, .menu-middle-text-icon:hover h3{
+    text-decoration: underline 2px solid white;
+    text-underline-offset: 8px;
+}
 .menu-dropdown-container-hidden{
-    display: flex;
+    display: none;
     position: absolute;
     flex-direction: column;
     background-color: black;
