@@ -18,6 +18,7 @@ a{
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
+    position: relative;
 }
 .drop-down{
     height: 100%;
@@ -52,14 +53,62 @@ a{
     justify-content: center;
 }
 .burger-menu .fa-xmark{
-    position: absolute;
+    display: none;
+    margin-right: -3px;
+}
+#show-or-hide-menu:checked ~ .menu-dropdown-container-hidden{
+    display: flex;
+}
+#show-or-hide-menu:checked ~ .dropdown-title .fa-xmark{
+    display: inline-block;
+}
+#show-or-hide-menu:checked ~ .dropdown-title .fa-bars{
     display: none;
 }
-
+.menu-direction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    cursor: pointer;
+}
 .menu-dropdown-container-hidden{
-    display: none;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    border-top: 1px solid rgb(80, 80, 80);
 }
-
+.menu-middle-text-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 72px;
+    color: white;
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+}
+.grey-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grey-row .menu-stripes-container{
+    flex: 1;
+}
+.menu-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-row .menu-stripes-container{
+    flex: 1;
+}
 
 @media (min-width:320px) {
     html{
@@ -79,6 +128,56 @@ a{
     }
     .burger-menu{
         font-size: 1rem;
+    }
+    .burger-menu .fa-xmark{
+        font-size: 22px;
+    }
+    .menu-dropdown-container-hidden{
+        padding: 20px;
+        margin-top: 86px;
+        gap: 24px;
+    }
+    .menu-row{
+        gap: 30px;
+        flex-direction: row;
+    }
+    .border-bottom-strips{
+        flex-wrap: wrap;
+    }
+    .menu-stripes-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;        
+    }
+    .menu-direction{
+        height:48px;
+        border-bottom: 1px solid rgb(80, 80, 80);
+    }
+    .menu-direction h3{
+        font-weight: 500;
+    }
+    .round-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        background-color: white;
+    }
+    .round-icon i{
+        font-size: 10px;
+        color: black;
+    }
+    .menu-middle-text-icon h3{
+        font-weight: 500;
+    }
+    .grey-row{
+        flex-direction: row;
+    }
+    .menu-row{
+        flex-direction:column;
     }
 }
 
@@ -102,6 +201,16 @@ a{
     .burger-menu{
         font-size: 1rem;
     }
+    .menu-row{
+        flex-direction: row;
+    }
+    .menu-dropdown-container-hidden{
+        padding: 20px 30px;
+        margin-top: 116px;
+        gap: 30px;
+        padding-bottom: 28px;
+    }
+    
 }
 
 
