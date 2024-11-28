@@ -368,7 +368,16 @@ a{
         padding: 0px 50px;
     }
     
-
+    .video-card-section{
+        max-height: 640px;
+        height: 100%;
+    }
+    .video-card-section video{
+        max-height: 640px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     .buttons-group{
         margin-bottom: 40px;
         margin-right: 50px;
