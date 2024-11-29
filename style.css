@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing:border-box;
     font-family: 'Arimo';
+    --gold: #F9B853;
+    --vegetation: #3A8340;
+    --blood: #EF4036;
 }
 a{
     text-decoration: none;
@@ -11,6 +14,10 @@ a{
 }
 body{
     height: 10000px;
+}
+.round-icon{
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .menu{
@@ -117,6 +124,8 @@ body{
 .menu-row .menu-stripes-container{
     flex: 1;
 }
+
+
 
 
 .video-card-section{
@@ -256,6 +265,140 @@ body{
 
 
 
+.colorful-cards-section{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 34px 20px;
+}
+.colorful-title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.colorful-title-container h3, .colorful-direction p{
+    color: white;
+}
+.colorful-title-container h3{
+    font-size: 32px;
+    font-weight: 600;
+}
+.colorful-direction{
+    display: none;
+}
+.colorful-cards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+}
+.colorful-card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+.colorful-text-square{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(29, 29, 29);
+    padding: 20px 20px;
+    gap: 40px;
+}
+.colorful-card img{
+    width: 100%;
+    border: 1px solid rgb(29, 29, 29);
+}
+.colorful-text-square{
+    font-size: 17px;
+    font-weight: 500;
+}
+.text-circle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 14px;
+    width: 130px;
+}
+.colorful-time{
+    line-height: 1.4;
+}
+.circle-with-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 84px;
+    width: 84px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 600;
+}
+.yellow .colorful-title{
+    color: var(--gold);
+}
+.yellow .circle-with-text{
+    background-color: var(--gold);
+}
+.green .colorful-title{
+    color: var(--vegetation);
+}
+.green .circle-with-text{
+    background-color: var(--vegetation);
+}
+.red .colorful-title{
+    color: var(--blood);
+}
+.red .circle-with-text{
+    background-color: var(--blood);
+}
+.white-text{
+    font-size: 24px;
+    font-weight: 600;
+}
+.colorful-title{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.hidden-button{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 50px;
+    padding: 0px 20px;
+}
+.hidden-button p{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+.hidden-button .round-icon{
+    background-color: black;
+}
+.hidden-button .round-icon i{
+    color:white;
+}
+
+
+
 @media (min-width:320px) {
     html{
         font-size: 16px;
@@ -368,7 +511,7 @@ body{
 
     .ticket-info{
         flex-direction: column;
-        padding: 30px 20px 36px 20px;
+        padding: 30px 20px 44px 20px;
         gap: 26px;
     }
     .ticket-title{
@@ -514,7 +657,7 @@ body{
     }
     .ticket-title{
         font-size: 44px;
-        width: 480px;
+        width: 540px;
     }
     .info-row{
         gap: 10px;
