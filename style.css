@@ -284,8 +284,10 @@ body{
     font-size: 32px;
     font-weight: 600;
 }
-.colorful-direction{
+.colorful-direction:hover p{
     display: flex;
+    text-decoration: underline 2px solid white;
+    text-underline-offset: 10px;
 }
 .colorful-cards-container{
     display: flex;
@@ -522,7 +524,6 @@ body{
     }
 
     .colorful-cards-section{
-        display: flex;
         padding: 34px 20px;
     }
     .colorful-title-container h3{
@@ -552,7 +553,7 @@ body{
         flex-direction: column;
         justify-content: space-between;
         background-color: rgb(29, 29, 29);
-        padding: 20px 20px;
+        padding: 20px;
         gap: 40px;
     }
     .colorful-text-square{
@@ -591,75 +592,6 @@ body{
 
 
 @media (min-width:768px) {
-    .colorful-cards-section{
-        display: flex;
-        padding: 34px 20px;
-    }
-    .colorful-title-container h3{
-        font-size: 32px;
-        font-weight: 600;
-    }
-    .colorful-direction{
-        display: none;
-    }
-    .colorful-cards-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-top: 20px;
-        gap: 20px;
-    }
-    .colorful-card{
-        display: flex;
-        flex-direction: column;
-        color: white;
-        cursor: pointer;
-    }
-    .colorful-text-square{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: rgb(29, 29, 29);
-        padding: 20px 20px;
-        gap: 40px;
-    }
-    .colorful-text-square{
-        font-size: 17px;
-        font-weight: 500;
-    }
-    .colorful-time{
-        line-height: 1.4;
-    }
-    .white-text{
-        font-size: 24px;
-        font-weight: 600;
-    }
-    .colorful-title{
-        font-size: 26px;
-        font-weight: 600;
-        line-height: 1.4;
-    }
-    .hidden-button{
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 50px;
-        height: 50px;
-        padding: 0px 20px;
-    }
-    .hidden-button p{
-        color: black;
-        font-weight: 600;
-        font-size: 18px;
-    }
-
-
-
     html{
         font-size: 16px;
     }
@@ -729,11 +661,103 @@ body{
     .info-row .fa-clock{
         font-size: 22px;
     }
+
+
+    .colorful-cards-section{
+        flex-direction: column;
+        padding: 40px 30px 80px 30px;
+    }
+    .colorful-title-container h3{
+        font-size: 37px;
+        font-weight: 600;
+    }
+    .colorful-direction{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .colorful-direction p{
+        font-size: 18px;
+    }
+    .colorful-cards-container{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        gap: 30px;
+        overflow-x: scroll;
+    }
+    .colorful-card{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        min-width: 340px;
+        min-height: 440px;
+    }
+    .colorful-text-square{
+        padding: 30px;
+        min-height: 258px;
+    }
+    .white-text{
+        font-size: 28px;
+    }
+    .colorful-title{
+        font-size: 30px;
+    }
+    .hidden-button{
+        display: none;
+    }
     
 }
 
 
 @media (min-width:1025px) {
+    .colorful-cards-section{
+        flex-direction: column;
+        padding: 56px 50px 80px 50px;
+    }
+    .colorful-title-container h3{
+        font-size: 44px;
+        font-weight: 600;
+    }
+    .colorful-direction{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .colorful-direction p{
+        font-size: 18px;
+    }
+    .colorful-cards-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        gap: 60px;
+        overflow: hidden;
+    }
+    .colorful-card{
+        min-width: 0;
+        flex-shrink: 1;
+        height: 100%;
+    }
+    .colorful-text-square{
+        padding: 30px;
+        min-height: 300px;
+    }
+    .white-text{
+        font-size: 28px;
+    }
+    .colorful-title{
+        font-size: 30px;
+    }
+    
+    
+    
     html{
         font-size: 16px;
     }
@@ -742,8 +766,6 @@ body{
         padding: 0px 50px;
     }
     
-
-
     .video-card-section video{
         max-height: 640px;
         width: 100%;
