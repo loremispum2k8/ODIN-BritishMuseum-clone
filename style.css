@@ -651,6 +651,18 @@ body{
         font-weight: 600;
         font-size: 18px;
     }
+    .hidden-button:hover{
+        background-color: black;
+    }
+    .hidden-button:hover p{
+        color: white;
+    }
+    .hidden-button:hover .round-icon{
+        background-color: white;
+    }
+    .hidden-button:hover .round-icon i{
+        color: black;
+    }
 }
 
 
