@@ -285,7 +285,7 @@ body{
     font-weight: 600;
 }
 .colorful-direction{
-    display: none;
+    display: flex;
 }
 .colorful-cards-container{
     display: flex;
@@ -331,7 +331,8 @@ body{
     font-size: 14px;
     font-weight: 500;
     gap: 14px;
-    width: 130px;
+    padding-right: 24px;
+    
 }
 .colorful-time{
     line-height: 1.4;
@@ -346,6 +347,8 @@ body{
     border-radius: 50%;
     font-size: 14px;
     font-weight: 600;
+    flex-shrink: 0;
+    flex-wrap: 0;
 }
 .yellow .colorful-title{
     color: var(--gold);
@@ -373,22 +376,6 @@ body{
     font-size: 26px;
     font-weight: 600;
     line-height: 1.4;
-}
-.hidden-button{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-    height: 50px;
-    padding: 0px 20px;
-}
-.hidden-button p{
-    color: black;
-    font-weight: 600;
-    font-size: 18px;
 }
 .hidden-button .round-icon{
     background-color: black;
@@ -533,10 +520,146 @@ body{
     .info-row .fa-clock{
         font-size: 20px;
     }
+
+    .colorful-cards-section{
+        display: flex;
+        padding: 34px 20px;
+    }
+    .colorful-title-container h3{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .colorful-direction{
+        display: none;
+    }
+    .colorful-cards-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .colorful-card{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        cursor: pointer;
+    }
+    .colorful-text-square{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(29, 29, 29);
+        padding: 20px 20px;
+        gap: 40px;
+    }
+    .colorful-text-square{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .colorful-time{
+        line-height: 1.4;
+    }
+    .white-text{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .colorful-title{
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+    .hidden-button{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        height: 50px;
+        padding: 0px 20px;
+    }
+    .hidden-button p{
+        color: black;
+        font-weight: 600;
+        font-size: 18px;
+    }
 }
 
 
 @media (min-width:768px) {
+    .colorful-cards-section{
+        display: flex;
+        padding: 34px 20px;
+    }
+    .colorful-title-container h3{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .colorful-direction{
+        display: none;
+    }
+    .colorful-cards-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .colorful-card{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        cursor: pointer;
+    }
+    .colorful-text-square{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(29, 29, 29);
+        padding: 20px 20px;
+        gap: 40px;
+    }
+    .colorful-text-square{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .colorful-time{
+        line-height: 1.4;
+    }
+    .white-text{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .colorful-title{
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+    .hidden-button{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        height: 50px;
+        padding: 0px 20px;
+    }
+    .hidden-button p{
+        color: black;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+
+
     html{
         font-size: 16px;
     }
