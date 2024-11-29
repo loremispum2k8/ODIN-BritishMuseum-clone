@@ -303,6 +303,7 @@ body{
     flex-direction: column;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 .colorful-text-square{
     display: flex;
@@ -386,6 +387,68 @@ body{
     color:white;
 }
 
+
+.colorful-card:hover .colorful-title, 
+.colorful-card:hover .white-text {
+    text-decoration: underline 2px solid black;
+    text-underline-offset: 10px;
+    color: black;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.colorful-card:hover .circle-text {
+    color: black;
+    transition: color 0.3s;
+}
+
+.yellow:hover .colorful-text-square {
+    background-color: var(--gold);
+    transition: background-color 0.3s;
+}
+
+.yellow:hover .circle-with-text {
+    color: var(--gold);
+    background-color: black;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.yellow:hover img {
+    border: 1px solid var(--gold);
+    transition: border-color 0.3s;
+}
+
+
+.green:hover .colorful-text-square {
+    background-color: var(--vegetation);
+    transition: background-color 0.3s;
+}
+
+.green:hover .circle-with-text {
+    color: var(--vegetation);
+    background-color: black;
+    transition: color 0.3s, background-color 0.3ss;
+}
+
+.green:hover img {
+    border: 1px solid var(--vegetation);
+    transition: border-color 0.3s;
+}
+
+.red:hover .colorful-text-square {
+    background-color: var(--blood);
+    transition: background-color 0.3ss;
+}
+
+.red:hover .circle-with-text {
+    color: var(--blood);
+    background-color: black;
+    transition: color 0.3s, background-color 0.3ss;
+}
+
+.red:hover img {
+    border: 1px solid var(--blood);
+    transition: border-color 0.3ss;
+}
 
 
 @media (min-width:320px) {
