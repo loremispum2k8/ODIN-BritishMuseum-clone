@@ -732,6 +732,11 @@ body{
         font-weight: 600;
         padding-right: 100px;
     }
+    .row-group{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
     .card-row{
         display: flex;
         flex-direction: column;
