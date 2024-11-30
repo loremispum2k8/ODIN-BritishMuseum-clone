@@ -11,296 +11,313 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <img class="background" src="images/background.jpg" alt="background">
     
-    <div class="menu">
-        <img src="images/logo.png" alt="logo">
-        <div class="drop-down">
-            
-            <input type="checkbox" id="show-or-hide-menu">
-            <div class="dropdown-title">
-                <div class="burger-menu">
-                    <label for="show-or-hide-menu"><i class="fa-solid fa-bars"></i></label>
-                    <label for="show-or-hide-menu"><i class="fa-solid fa-xmark"></i></label>
+    <div class="content">
+        <div class="menu">
+            <img src="images/logo.png" alt="logo">
+            <div class="drop-down">
+                
+                <input type="checkbox" id="show-or-hide-menu">
+                <div class="dropdown-title">
+                    <div class="burger-menu">
+                        <label for="show-or-hide-menu"><i class="fa-solid fa-bars"></i></label>
+                        <label for="show-or-hide-menu"><i class="fa-solid fa-xmark"></i></label>
+                    </div>
+                    <label for="show-or-hide-menu"><h3>Menu</h3></label>
                 </div>
-                <label for="show-or-hide-menu"><h3>Menu</h3></label>
-            </div>
-            
-            <div class="menu-dropdown-container-hidden">
-                <div class="menu-row">
-                    <div class="menu-stripes-container border-bottom-strips">
-                        <div class="menu-direction">
-                            <h3>Visit</h3>
-                            <div class="round-icon">
-                                <i class="fa-solid fa-chevron-right"></i>
+                
+                <div class="menu-dropdown-container-hidden">
+                    <div class="menu-row">
+                        <div class="menu-stripes-container border-bottom-strips">
+                            <div class="menu-direction">
+                                <h3>Visit</h3>
+                                <div class="round-icon">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="menu-direction">
+                                <h3>Collection</h3>
+                                <div class="round-icon">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="menu-direction">
+                                <h3>Membership</h3>
+                                <div class="round-icon">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu-direction">
-                            <h3>Collection</h3>
-                            <div class="round-icon">
-                                <i class="fa-solid fa-chevron-right"></i>
+                        <div class="menu-stripes-container border-bottom-strips">
+                            <div class="menu-direction">
+                                <h3>Exhibitions and events</h3>
+                                <div class="round-icon">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
                             </div>
-                        </div>
-                        <div class="menu-direction">
-                            <h3>Membership</h3>
-                            <div class="round-icon">
-                                <i class="fa-solid fa-chevron-right"></i>
+                            <div class="menu-direction">
+                                <h3>Learn</h3>
+                                <div class="round-icon">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="menu-direction">
+                                <h3>Support us</h3>
+                                <div class="round-icon">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="menu-stripes-container border-bottom-strips">
-                        <div class="menu-direction">
-                            <h3>Exhibitions and events</h3>
-                            <div class="round-icon">
-                                <i class="fa-solid fa-chevron-right"></i>
+                    
+                    
+                    <div class="menu-row grey-row">
+                        <div class="menu-stripes-container full-strips">
+                            <div class="menu-middle-text-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h3>Shop</h3>
                             </div>
                         </div>
-                        <div class="menu-direction">
-                            <h3>Learn</h3>
-                            <div class="round-icon">
-                                <i class="fa-solid fa-chevron-right"></i>
+                        <div class="menu-stripes-container full-strips">
+                            <div class="menu-middle-text-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <h3>Search</h3>
                             </div>
                         </div>
-                        <div class="menu-direction">
-                            <h3>Support us</h3>
-                            <div class="round-icon">
-                                <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+        
+        
+                    <div class="menu-row">
+                        <div class="menu-stripes-container border-bottom-strips">
+                            <div class="menu-middle-text-icon">
+                                <h3>Donate</h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                
-                <div class="menu-row grey-row">
-                    <div class="menu-stripes-container full-strips">
-                        <div class="menu-middle-text-icon">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <h3>Shop</h3>
+            </div>
+        </div>
+    
+        <div class="video-card-section">
+            <div class="video-section">
+                <video src="videos/MuseumVideo.mp4" muted loop autoplay></video>
+                <div class="buttons-group">
+                    <input type="checkbox" id="play-pause">
+                    <label for="play-pause">
+                        <div class="video-button pause-btn">
+                            <i class="fa-solid fa-pause"></i>
+                            <i class="fa-solid fa-play"></i>
                         </div>
-                    </div>
-                    <div class="menu-stripes-container full-strips">
-                        <div class="menu-middle-text-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <h3>Search</h3>
+                    </label>
+                    <a href="https://www.youtube.com/watch?v=0I0Bl0B_2zA" target="_blank" rel="noopener noreferrer">
+                        <div class="video-button ad-btn">
+                            <p>AD</p>
                         </div>
+                    </a>
+                    <div class="video-button info-btn">
+                        <i class="fa-solid fa-info"></i>
                     </div>
                 </div>
     
+            </div>
+            <div class="card-section">
+                <h2 class="card-title">Welcome to the British Museum</h2>
+                <p class="card-text">Experience cultures across the globe, from the dawn of human history to the present. </p>
+                <div class="plan-your-visit-button">
+                    <p>Plan your visit</p>
+                    <div class="round-icon">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     
-                <div class="menu-row">
-                    <div class="menu-stripes-container border-bottom-strips">
-                        <div class="menu-middle-text-icon">
-                            <h3>Donate</h3>
+        <div class="ticket-info" style="border-bottom: 0.5px solid rgb(65, 65, 65);">
+            <h2 class="ticket-title">Discover two million years of human history and culture</h2>
+            <div class="info-container">
+                <div class="info-row">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>Free entry - <span>book online</span></p>
+                </div>
+                <div class="info-row">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Open today: 10.00-17.00</p>
+                </div>
+                <div class="info-row">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Last entry: 16.45</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="colorful-cards-section" style="border-bottom: 0.5px solid rgb(65, 65, 65);">
+            <div class="colorful-title-container">
+                <h3>Exhibitions and events</h3>
+                <div class="colorful-direction">
+                    <p>See all exhibitions and events</p>
+                    <div class="round-icon">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="colorful-cards-container">
+                <div class="colorful-card yellow">
+                    <div class="colorful-text-square">
+                        <h2 class="colorful-title">Silk Roads</h2>
+                        <div class="text-circle">
+                            <div class="circle-text">
+                                <p>Exhibition</p>
+                                <p class="colorful-time">26 September 2024 - 23 February 2025</p>
+                            </div>
+                            <div class="circle-with-text">
+                                Book now
+                            </div>
                         </div>
                     </div>
+                    <img src="images/colorful-cards/silk-road.jpg" alt="The silk road image">
                 </div>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="video-card-section">
-        <div class="video-section">
-            <video src="videos/MuseumVideo.mp4" muted loop autoplay></video>
-            <div class="buttons-group">
-                <input type="checkbox" id="play-pause">
-                <label for="play-pause">
-                    <div class="video-button pause-btn">
-                        <i class="fa-solid fa-pause"></i>
-                        <i class="fa-solid fa-play"></i>
+                <div class="colorful-card green">
+                    <div class="colorful-text-square">
+                        <div class="double-titles">
+                            <p class="white-text">Hew Locke</p>
+                            <h2 class="colorful-title">what have we here?</h2>
+                        </div>
+                        <div class="text-circle">
+                            <div class="circle-text">
+                                <p>Exhibition</p>
+                                <p class="colorful-time">17 october 2024 - 9 February 2025</p>
+                            </div>
+                            <div class="circle-with-text">
+                                Book now
+                            </div>
+                        </div>
                     </div>
-                </label>
-                <a href="https://www.youtube.com/watch?v=0I0Bl0B_2zA" target="_blank" rel="noopener noreferrer">
-                    <div class="video-button ad-btn">
-                        <p>AD</p>
+                    <img src="images/colorful-cards/golden-man.jpg" alt="The silk road image">
+                </div>
+        
+                <div class="colorful-card red"> 
+                    <div class="colorful-text-square">
+                        <div class="double-titles">
+                            <p class="white-text">Picasso</p>
+                            <h2 class="colorful-title">printmaker</h2>
+                        </div>
+                        <div class="text-circle">
+                            <div class="circle-text">
+                                <p>Exhibition</p>
+                                <p class="colorful-time">7 November 2024 - 30 march 2025</p>
+                            </div>
+                            <div class="circle-with-text">
+                                Book now
+                            </div>
+                        </div>
                     </div>
-                </a>
-                <div class="video-button info-btn">
-                    <i class="fa-solid fa-info"></i>
+                    <img src="images/colorful-cards/picasso.jpg" alt="The silk road image">
                 </div>
             </div>
-
-        </div>
-        <div class="card-section">
-            <h2 class="card-title">Welcome to the British Museum</h2>
-            <p class="card-text">Experience cultures across the globe, from the dawn of human history to the present. </p>
-            <div class="plan-your-visit-button">
-                <p>Plan your visit</p>
-                <div class="round-icon">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="ticket-info" style="border-bottom: 0.5px solid rgb(65, 65, 65);">
-        <h2 class="ticket-title">Discover two million years of human history and culture</h2>
-        <div class="info-container">
-            <div class="info-row">
-                <i class="fa-solid fa-ticket"></i>
-                <p>Free entry - <span>book online</span></p>
-            </div>
-            <div class="info-row">
-                <i class="fa-regular fa-clock"></i>
-                <p>Open today: 10.00-17.00</p>
-            </div>
-            <div class="info-row">
-                <i class="fa-regular fa-clock"></i>
-                <p>Last entry: 16.45</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="colorful-cards-section" style="border-bottom: 0.5px solid rgb(65, 65, 65);">
-        <div class="colorful-title-container">
-            <h3>Exhibitions and events</h3>
-            <div class="colorful-direction">
+    
+            <div class="hidden-button">
                 <p>See all exhibitions and events</p>
                 <div class="round-icon">
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
         </div>
-
-        <div class="colorful-cards-container">
-            <div class="colorful-card yellow">
-                <div class="colorful-text-square">
-                    <h2 class="colorful-title">Silk Roads</h2>
-                    <div class="text-circle">
-                        <div class="circle-text">
-                            <p>Exhibition</p>
-                            <p class="colorful-time">26 September 2024 - 23 February 2025</p>
-                        </div>
-                        <div class="circle-with-text">
-                            Book now
-                        </div>
-                    </div>
-                </div>
-                <img src="images/colorful-cards/silk-road.jpg" alt="The silk road image">
-            </div>
-            <div class="colorful-card green">
-                <div class="colorful-text-square">
-                    <div class="double-titles">
-                        <p class="white-text">Hew Locke</p>
-                        <h2 class="colorful-title">what have we here?</h2>
-                    </div>
-                    <div class="text-circle">
-                        <div class="circle-text">
-                            <p>Exhibition</p>
-                            <p class="colorful-time">17 october 2024 - 9 February 2025</p>
-                        </div>
-                        <div class="circle-with-text">
-                            Book now
-                        </div>
-                    </div>
-                </div>
-                <img src="images/colorful-cards/golden-man.jpg" alt="The silk road image">
-            </div>
     
-            <div class="colorful-card red"> 
-                <div class="colorful-text-square">
-                    <div class="double-titles">
-                        <p class="white-text">Picasso</p>
-                        <h2 class="colorful-title">printmaker</h2>
-                    </div>
-                    <div class="text-circle">
-                        <div class="circle-text">
-                            <p>Exhibition</p>
-                            <p class="colorful-time">7 November 2024 - 30 march 2025</p>
-                        </div>
-                        <div class="circle-with-text">
-                            Book now
+        <div class="repeating-card-section">
+            <h2 class="repeating-title">Visit the Museum</h2>
+            <div class="row-group">
+                <div class="card-row">
+                    <div class="grey-card">
+                        <img src="images/repeating-cards/repeating-cards-one/woman.jpg" alt="people at desk">
+                        <div class="repeating-text">
+                            <h3>Plan your visit</h3>
+                            <p>Book tickets and plan your day including exhibitions, facilities, access, food and travel.
+                            </p>
                         </div>
                     </div>
+                    <div class="grey-card">
+                        <img src="images/repeating-cards/repeating-cards-one/big-room.jpg" alt="people at desk">
+                        <div class="repeating-text">
+                            <h3>Museum Map</h3>
+                            <p>Navigate the Museum with ease, using our floor-by-floor plan and discover what not to miss.</p>
+                        </div>
+                    </div>
                 </div>
-                <img src="images/colorful-cards/picasso.jpg" alt="The silk road image">
+                <div class="card-row">
+                    <div class="grey-card">
+                        <img src="images/repeating-cards/repeating-cards-one/rock.jpg" alt="people at desk">
+                        <div class="repeating-text">
+                            <h3>Galleries</h3>
+                            <p>Walk through two million years of history and culture across more than 50 galleries.</p>
+                        </div>
+                    </div>
+                    <div class="grey-card">
+                        <img src="images/repeating-cards/repeating-cards-one/horse.jpg" alt="people at desk">
+                        <div class="repeating-text">
+                            <h3>Family visits</h3>
+                            <p>From family facilities to activities and events, discover how to make the most of your day at the Museum.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="hidden-button">
-            <p>See all exhibitions and events</p>
-            <div class="round-icon">
-                <i class="fa-solid fa-chevron-right"></i>
+    
+        <div class="static-image-div">
+            <div class="inner-static-container">
+                <h1>Become a Member</h1>
+                <div class="right-text">
+                    <h2>Enjoy exclusive events, unlimited access to exhibitions and the Members' Room, plus discounts in the Museum shops, cafés and restaurants.</h2>
+                    <div class="static-button">
+                        <p>Find out more</p>
+                        <div class="round-icon">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="repeating-card-section">
-        <h2 class="repeating-title">Visit the Museum</h2>
-        <div class="row-group">
-            <div class="card-row">
-                <div class="grey-card">
-                    <img src="images/repeating-cards/repeating-cards-one/woman.jpg" alt="people at desk">
-                    <div class="repeating-text">
-                        <h3>Plan your visit</h3>
-                        <p>Book tickets and plan your day including exhibitions, facilities, access, food and travel.
-                        </p>
+        
+        <div class="repeating-card-section">
+            <h2 class="repeating-title">What's online...</h2>
+            <div class="row-group">
+                <div class="card-row">
+                    <div class="grey-card">
+                        <img src="images/repeating-cards/repeating-cards-two/desk-people.jpg" alt="people at desk">
+                        <div class="repeating-text">
+                            <h3>The power of poetry</h3>
+                            <p>Whether you're a teacher, parent or someone looking for ways to explore the history of colonialism with young people, poetry may be the key.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grey-card">
+                        <img src="images/repeating-cards/repeating-cards-two/river.jpg" alt="people at desk">
+                        <div class="repeating-text">
+                            <h3>What's on at the British Museum in 2024/25</h3>
+                            <p>From Picasso to Edo Japan to ancient India, find out more about the British Museum's upcoming special exhibitions.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="grey-card">
-                    <img src="images/repeating-cards/repeating-cards-one/big-room.jpg" alt="people at desk">
-                    <div class="repeating-text">
-                        <h3>Museum Map</h3>
-                        <p>Navigate the Museum with ease, using our floor-by-floor plan and discover what not to miss.</p>
+                <div class="card-row">
+                    <div class="grey-card">
+                        <img src="images/repeating-cards/repeating-cards-two/sculptures.jpg" alt="people at desk">
+                        <div class="repeating-text">
+                            <h3>Desire, love, identity</h3>
+                            <p>This trans awareness week explore LGBTQ+ histories in the collection, in the Museum or at home, with these stories and object trails.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card-row">
-                <div class="grey-card">
-                    <img src="images/repeating-cards/repeating-cards-one/rock.jpg" alt="people at desk">
-                    <div class="repeating-text">
-                        <h3>Galleries</h3>
-                        <p>Walk through two million years of history and culture across more than 50 galleries.</p>
-                    </div>
-                </div>
-                <div class="grey-card">
-                    <img src="images/repeating-cards/repeating-cards-one/horse.jpg" alt="people at desk">
-                    <div class="repeating-text">
-                        <h3>Family visits</h3>
-                        <p>From family facilities to activities and events, discover how to make the most of your day at the Museum.</p>
+                    <div class="grey-card">
+                        <img src="images/repeating-cards/repeating-cards-two/coins.jpg" alt="people at desk">
+                        <div class="repeating-text">
+                            <h3>Why Kings and Queens face differnt directions</h3>
+                            <p>Why is King Charles III facing this way on the new pound coin? Money and Medals Keeper Tom Hockenhull explores 500 years of English coins.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
-    <!--<div class="repeating-card-section">
-        <h2 class="repeating-title">What's online...</h2>
-        <div class="card-row">
-            <div class="grey-card">
-                <img src="images/repeating-cards/repeating-cards-two/desk-people.jpg" alt="people at desk">
-                <div class="repeating-text">
-                    <h3>The power of poetry</h3>
-                    <p>Whether you're a teacher, parent or someone looking for ways to explore the history of colonialism with young people, poetry may be the key.</p>
-                </div>
-            </div>
-            <div class="grey-card">
-                <img src="images/repeating-cards/repeating-cards-two/river.jpg" alt="people at desk">
-                <div class="repeating-text">
-                    <h3>What's on at the British Museum in 2024-2025</h3>
-                    <p>From Picasso to Edo Japan to ancient India, find out more about the British Museum's upcoming special exhibitions.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card-row">
-            <div class="grey-card">
-                <img src="images/repeating-cards/repeating-cards-two/sculptures.jpg" alt="people at desk">
-                <div class="repeating-text">
-                    <h3>Desire, love, identity</h3>
-                    <p>This trans awareness week explore LGBTQ+ histories in the collection, in the Museum or at home, with these stories and object trails.</p>
-                </div>
-            </div>
-            <div class="grey-card">
-                <img src="images/repeating-cards/repeating-cards-two/coins.jpg" alt="people at desk">
-                <div class="repeating-text">
-                    <h3>Why Kings and Queens face different directions</h3>
-                    <p>Why is King Charles III facing this way on the new pound coin? Money and Medals Keeper Tom Hockenhull explores 500 years of English coins.</p>
-                </div>
-            </div>
-        </div>
-    </div>-->
 </body>
 </html>
