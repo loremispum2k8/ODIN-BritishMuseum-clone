@@ -1010,7 +1010,8 @@ body{
     }
 
     .static-button{
-        width: 200px;
+        gap: 20px;
+        width: fit-content;
     }
     
 }
