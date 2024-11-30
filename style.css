@@ -507,8 +507,6 @@ body{
 }
 
 
-
-
 @media (min-width:320px) {
     html{
         font-size: 16px;
@@ -1021,5 +1019,38 @@ body{
         font-size: 30px;
     }
     
-    
+    .repeating-card-section{
+        padding: 52px 50px;
+        gap: 20px;
+    }
+    .repeating-title{
+        font-size: 44px;
+    }
+    .row-group{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+    }
+    .grey-card{
+        flex: 1;
+    }
+    .card-row{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    .repeating-text{
+        padding: 30px;
+        gap: 12px;
+        max-height: 216px;
+        height: 100%;
+    }
+    .repeating-text h3{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .repeating-text p{
+        font-size: 19px;
+        line-height: 1.6;
+    }
 }
