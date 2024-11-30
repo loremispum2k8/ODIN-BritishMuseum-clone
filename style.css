@@ -451,6 +451,64 @@ body{
 }
 
 
+
+.repeating-card-section{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    background-color: black;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.repeating-title{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    padding-right: 100px;
+}
+.card-row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.grey-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+.grey-card img{
+    width: 100%;
+    transition: filter 0.3s;
+}
+.repeating-text{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(29, 29, 29);
+    padding: 20px;
+    gap: 12px;
+}
+.repeating-text h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.repeating-text p{
+    color: rgb(175, 175, 175);
+    font-size: 19px;
+    line-height: 1.6;
+}
+.grey-card:hover .repeating-text h3{
+    text-decoration: 2px solid white underline;
+    text-underline-offset: 6px;
+}
+.grey-card:hover img{
+    filter: brightness(80%);
+}
+
+
+
+
 @media (min-width:320px) {
     html{
         font-size: 16px;
@@ -663,6 +721,34 @@ body{
     .hidden-button:hover .round-icon i{
         color: black;
     }
+
+
+    .repeating-card-section{
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    .repeating-title{
+        font-size: 32px;
+        font-weight: 600;
+        padding-right: 100px;
+    }
+    .card-row{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .repeating-text{
+        padding: 20px;
+        gap: 12px;
+    }
+    .repeating-text h3{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .repeating-text p{
+        font-size: 19px;
+        line-height: 1.6;
+    }
 }
 
 
@@ -784,55 +870,48 @@ body{
     .hidden-button{
         display: none;
     }
+
+
+    .repeating-card-section{
+        padding: 48px 30px;
+        gap: 20px;
+    }
+    .repeating-title{
+        font-size: 37px;
+    }
+    .row-group{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    .grey-card{
+        flex: 1;
+    }
+    .card-row{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .repeating-text{
+        padding: 30px;
+        gap: 12px;
+        max-height: 216px;
+        height: 100%;
+    }
+    .repeating-text h3{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .repeating-text p{
+        font-size: 19px;
+        line-height: 1.6;
+    }
     
 }
 
 
 @media (min-width:1025px) {
-    .colorful-cards-section{
-        flex-direction: column;
-        padding: 56px 50px 80px 50px;
-    }
-    .colorful-title-container h3{
-        font-size: 44px;
-        font-weight: 600;
-    }
-    .colorful-direction{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        cursor: pointer;
-    }
-    .colorful-direction p{
-        font-size: 18px;
-    }
-    .colorful-cards-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 20px;
-        gap: 60px;
-        overflow: hidden;
-    }
-    .colorful-card{
-        min-width: 0;
-        flex-shrink: 1;
-        height: 100%;
-    }
-    .colorful-text-square{
-        padding: 30px;
-        min-height: 300px;
-    }
-    .white-text{
-        font-size: 28px;
-    }
-    .colorful-title{
-        font-size: 30px;
-    }
-    
-    
-    
+
     html{
         font-size: 16px;
     }
@@ -893,4 +972,49 @@ body{
     .info-row .fa-clock{
         font-size: 22px;
     }
+
+
+    .colorful-cards-section{
+        flex-direction: column;
+        padding: 56px 50px 80px 50px;
+    }
+    .colorful-title-container h3{
+        font-size: 44px;
+        font-weight: 600;
+    }
+    .colorful-direction{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .colorful-direction p{
+        font-size: 18px;
+    }
+    .colorful-cards-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        gap: 60px;
+        overflow: hidden;
+    }
+    .colorful-card{
+        min-width: 0;
+        flex-shrink: 1;
+        height: 100%;
+    }
+    .colorful-text-square{
+        padding: 30px;
+        min-height: 300px;
+    }
+    .white-text{
+        font-size: 28px;
+    }
+    .colorful-title{
+        font-size: 30px;
+    }
+    
+    
 }
