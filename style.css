@@ -591,6 +591,71 @@ body{
 }
 
 
+.moving-cards-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+    margin-top: 20px;
+    height: 565px;
+}
+.moving-card{
+    background-color: rgb(27, 27, 27);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    min-width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.moving-card img{
+    transition: transform 0.4s;
+}
+.moving-card:hover .moving-card-title{
+    text-decoration: underline white 2px solid;
+    text-underline-offset: 6px;
+}
+.moving-card:hover{
+    transform: rotateY(-10deg);
+}
+.moving-card:hover img{
+    transform: translateX(-16px);
+}
+.moving-card-title{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.egypt{
+    width: 300px;
+}
+.pins{
+    width: 220px;
+}
+.kitty{
+    width: 220px;
+}
+.statue{
+    width: 300px;
+}
+.flat-statue{
+    width: 300px;
+}
+.egg{
+    width: 300px;
+}
+
+
+
 @media (min-width:320px) {
     html{
         font-size: 16px;
@@ -851,6 +916,26 @@ body{
         font-size: 18px;
         font-weight: 600;
     }
+
+    .moving-cards-container{
+        margin-top: 20px;
+        height: 565px;
+        gap: 40px;
+    }
+    .moving-card{
+        height: 100%;
+        min-width: 300px;
+    }
+    .moving-card:hover .moving-card-title{
+        text-decoration: underline white 2px solid;
+        text-underline-offset: 6px;
+    }
+    .moving-card-title{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-weight: 500;
+        font-size: 20px;
+    }
 }
 
 
@@ -1013,7 +1098,26 @@ body{
         gap: 20px;
         width: fit-content;
     }
-    
+
+    .moving-cards-container{
+        margin-top: 20px;
+        height: 565px;
+        gap: 30px;
+    }
+    .moving-card{
+        height: 100%;
+        min-width: 580px;
+    }
+    .moving-card:hover .moving-card-title{
+        text-decoration: underline white 2px solid;
+        text-underline-offset: 8px;
+    }
+    .moving-card-title{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-weight: 500;
+        font-size: 22px;
+    }
 }
 
 
@@ -1182,5 +1286,26 @@ body{
     .static-button p{
         font-size: 18px;
         font-weight: 600;
+    }
+    
+
+    .moving-cards-container{
+        margin-top: 20px;
+        height: 640px;
+        gap: 50px;
+    }
+    .moving-card{
+        height: 100%;
+        min-width: 360px;
+    }
+    .moving-card:hover .moving-card-title{
+        text-decoration: underline white 2px solid;
+        text-underline-offset: 8px;
+    }
+    .moving-card-title{
+        margin-top: 30px;
+        margin-left: 30px;
+        font-weight: 500;
+        font-size: 22px;
     }
 }
