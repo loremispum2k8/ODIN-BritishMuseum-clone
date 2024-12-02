@@ -32,6 +32,21 @@ body{
     position: relative;
     z-index: 1;
 }
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #777777;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #494949;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222222;
+    cursor: pointer;
+  }
 
 .menu{
     display: flex;
@@ -653,7 +668,102 @@ body{
 .egg{
     width: 300px;
 }
+.hidden-button{
+    transition: background-color 0.3s, color 0.3s;
+}
+.hidden-button div{
+    transition: background-color 0.3s;
+}
+.hidden-button div i{
+    transition: background-color 0.3s, color 0.3s;
+}
+.moving-cards-container + .hidden-button:hover{
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.moving-cards-container + .hidden-button:hover p{
+    color: white;
+}
+.moving-cards-container + .hidden-button:hover div{
+    background-color: white;
+}
+.moving-cards-container + .hidden-button:hover div i{
+    background-color: white;
+    color: black;
+}
 
+
+
+#white-repeater{
+    background-color: rgb(228, 228, 228);
+}
+#white-repeater .colorful-direction:hover p{
+    text-decoration: underline black 2px solid;
+}
+.special-btn .round-icon{
+    background-color: rgb(255, 255, 255);
+}
+.special-btn .round-icon i{
+    color:rgb(0, 0, 0);
+}
+.special-btn{
+    background-color: black;
+    color:white;
+    transition: background-color 0.3s, color 0.3s;
+}
+.special-btn div{
+    transition: background-color 0.3s;
+}
+.special-btn div i{
+    transition: background-color 0.3s, color 0.3s;
+}
+.special-btn:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.special-btn:hover p{
+    color: rgb(0, 0, 0);
+}
+.special-btn:hover div{
+    background-color: white;
+}
+.special-btn:hover div i{
+    color: black;
+}
+
+.white-cards-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: scroll;
+    gap: 40px;
+}
+.white-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px 26px 20px;
+    align-items: center;
+    min-width: 280px;
+    min-height: 350px;
+    cursor: pointer;
+}
+.white-card:hover .white-card-title{
+    text-decoration: underline 2px solid black;
+    text-underline-offset: 6px;
+}
+.white-card-title{
+    font-size: 21px;
+    font-weight: 500;
+    width: 100%;
+}
+.white-card img{
+    width: 100%;
+}
 
 
 @media (min-width:320px) {
@@ -921,6 +1031,7 @@ body{
         margin-top: 20px;
         height: 565px;
         gap: 40px;
+        padding: 0px 00px;
     }
     .moving-card{
         height: 100%;
@@ -942,6 +1053,35 @@ body{
         width: 100%;
         min-height: 80px;
         background-color: transparent;
+    }
+
+    .special-btn{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        height: 50px;
+        padding: 0px 20px;
+    }
+    .special-btn p{
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .special-btn:hover{
+        background-color: rgb(255, 255, 255);
+    }
+    .special-btn:hover p{
+        color: rgb(0, 0, 0);
+    }
+    .special-btn:hover .round-icon{
+        background-color: rgb(0, 0, 0);
+    }
+    .special-btn:hover .round-icon i{
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -1110,6 +1250,7 @@ body{
         margin-top: 20px;
         height: 565px;
         gap: 30px;
+        padding: 0px;
     }
     .moving-card{
         height: 100%;
@@ -1131,6 +1272,43 @@ body{
         width: 100%;
         min-height: 180px;
         background-color: transparent;
+    }
+    .special-btn{
+        display: none;
+    }
+
+
+    .white-cards-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        overflow-x: scroll;
+        gap: 30px;
+    }
+    .white-card{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 40px 40px 30px;
+        align-items: center;
+        min-width: 400px;
+        min-height: 500px;
+        cursor: pointer;
+        gap: 30px;
+    }
+    .white-card:hover .white-card-title{
+        text-decoration: underline 2px solid black;
+        text-underline-offset: 6px;
+    }
+    .white-card-title{
+        font-size: 21px;
+        font-weight: 500;
+        width: 100%;
+    }
+    .white-card img{
+        width: 100%;
     }
 }
 
@@ -1307,6 +1485,7 @@ body{
         margin-top: 20px;
         height: 640px;
         gap: 50px;
+        padding: 0px;
     }
     .moving-card{
         height: 100%;
@@ -1328,5 +1507,41 @@ body{
         width: 100%;
         min-height: 200px;
         background-color: transparent;
+    }
+    .special-btn{
+        display: none;
+    }
+
+    .white-cards-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        overflow-x: scroll;
+        gap: 60px;
+    }
+    .white-card{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 40px 40px 30px;
+        align-items: center;
+        min-width: 250px;
+        min-height: 350px;
+        cursor: pointer;
+        gap: 30px;
+    }
+    .white-card:hover .white-card-title{
+        text-decoration: underline 2px solid black;
+        text-underline-offset: 6px;
+    }
+    .white-card-title{
+        font-size: 21px;
+        font-weight: 500;
+        width: 100%;
+    }
+    .white-card img{
+        width: 100%;
     }
 }
