@@ -13,7 +13,7 @@ a{
     color: initial;
 }
 body{
-    height: 10000px;
+    height: 20000px;
 }
 .round-icon{
     flex-shrink: 0;
@@ -936,6 +936,13 @@ body{
         font-weight: 500;
         font-size: 20px;
     }
+    
+    .transparent-side{
+        display: flex;
+        width: 100%;
+        min-height: 80px;
+        background-color: transparent;
+    }
 }
 
 
@@ -1117,6 +1124,13 @@ body{
         margin-left: 20px;
         font-weight: 500;
         font-size: 22px;
+    }
+
+    .transparent-side{
+        display: flex;
+        width: 100%;
+        min-height: 180px;
+        background-color: transparent;
     }
 }
 
@@ -1307,5 +1321,12 @@ body{
         margin-left: 30px;
         font-weight: 500;
         font-size: 22px;
+    }
+
+    .transparent-side{
+        display: flex;
+        width: 100%;
+        min-height: 200px;
+        background-color: transparent;
     }
 }
