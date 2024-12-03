@@ -766,6 +766,119 @@ body{
 }
 
 
+.sign-up-container{
+    background-color: #1b1b1b;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Change to row after 1025px width*/
+    padding: 30px 20px 20px 20px;
+    gap: 20px;
+}
+.sign-up-row-one{
+    display: flex;
+    flex-direction: column; /* Change to row after 1025px width*/
+    gap: 20px;
+}
+.sign-up-tilte{
+    font-size: 32px;
+    font-weight: 500;
+}
+.sing-up-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sing-up-text p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.sign-up-form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    position: relative;
+}
+.sign-up-form input{
+    background-color: transparent;
+    border: 1px solid white;
+    height: 100%;
+    flex: 1;
+    min-width: 50px;
+}
+.sign-up-form button{
+    height: 100%;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    flex-grow: 0;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.sing-up-row-two{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.socials-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.social{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}.social:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.back-to-thetop-btn{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color:white;
+    padding: 0px 20px;
+}
+.back-to-thetop-btn p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.back-to-thetop-btn i{
+    font-size: 18px;
+}
+.sign-up-form input{
+    padding: 0px 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+}
+.sign-up-form input:focus{
+    background-color: white;
+}
+.sign-up-form button:hover{
+    background-color: black;
+    color:white;
+    border: 1px solid white;
+}
+
+
 @media (min-width:320px) {
     html{
         font-size: 16px;
@@ -1310,6 +1423,105 @@ body{
     .white-card img{
         width: 100%;
     }
+
+    .sign-up-container{
+        background-color: #1b1b1b;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 30px 40px 30px;
+        gap: 20px;
+    }
+    .sign-up-row-one{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sign-up-tilte{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .sing-up-text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sing-up-text p{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    .sign-up-form{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        position: relative;
+    }
+    .sign-up-form input{
+        background-color: transparent;
+        border: 1px solid white;
+        height: 100%;
+        flex: 1;
+        min-width: 50px;
+    }
+    .sign-up-form button{
+        height: 100%;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        flex-grow: 0;
+        border: none;
+        width: 100px;
+        cursor: pointer;
+    }
+    .sing-up-row-two{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .socials-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .social{
+        height: 50px;
+        width: 50px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .back-to-thetop-btn{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+        background-color: transparent;
+        color:white;
+        padding: 0px;
+        cursor: pointer;
+    }
+    .back-to-thetop-btn:hover p{
+        text-decoration: underline 2px solid white;
+        text-underline-offset: 10px;
+    }
+    .back-to-thetop-btn p{
+        font-size:18px;
+        font-weight: 400;
+    }
+    .back-to-thetop-btn i{
+        font-size: 18px;
+    }
 }
 
 
@@ -1543,5 +1755,108 @@ body{
     }
     .white-card img{
         width: 100%;
+    }
+    
+
+    .sign-up-container{
+        background-color: #1b1b1b;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px 50px 50px 50px;
+        gap: 20px;
+    }
+    .sign-up-row-one{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .sign-up-tilte{
+        font-size: 44px;
+        font-weight: 600;
+    }
+    .sing-up-text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sing-up-text p{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    .sign-up-form{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        position: relative;
+    }
+    .sign-up-form input{
+        background-color: transparent;
+        border: 1px solid white;
+        height: 100%;
+        flex: 1;
+        min-width: 50px;
+    }
+    .sign-up-form button{
+        height: 100%;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        flex-grow: 0;
+        border: none;
+        width: 100px;
+        cursor: pointer;
+    }
+    .sing-up-row-two{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .socials-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .social{
+        height: 50px;
+        width: 50px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .back-to-thetop-btn{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+        background-color: transparent;
+        color:white;
+        padding: 0px;
+        cursor: pointer;
+    }
+    .back-to-thetop-btn:hover p{
+        text-decoration: underline 2px solid white;
+        text-underline-offset: 10px;
+    }
+    .back-to-thetop-btn p{
+        font-size:18px;
+        font-weight: 400;
+    }
+    .back-to-thetop-btn i{
+        font-size: 18px;
     }
 }
