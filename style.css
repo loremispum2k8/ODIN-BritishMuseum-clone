@@ -770,13 +770,13 @@ body{
     background-color: #1b1b1b;
     color: white;
     display: flex;
-    flex-direction: column; /* Change to row after 1025px width*/
+    flex-direction: column;
     padding: 30px 20px 20px 20px;
     gap: 20px;
 }
 .sign-up-row-one{
     display: flex;
-    flex-direction: column; /* Change to row after 1025px width*/
+    flex-direction: column;
     gap: 20px;
 }
 .sign-up-tilte{
@@ -876,6 +876,98 @@ body{
     background-color: black;
     color:white;
     border: 1px solid white;
+}
+
+
+.end-section{
+    background-color: #1b1b1b;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column; /* change to row at 1025px width*/
+}
+.fake-left-side{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5px solid rgb(65, 65, 65); /* remove at 1025px */
+    padding-bottom: 20px;
+    gap: 50px;
+}
+.fake-title p, .menu-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.menu-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.menu-title:hover{
+    cursor: pointer;
+    text-decoration: underline 2px solid white;
+    text-underline-offset: 6px;
+}
+.menu-text{
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    font-weight: 400;
+}
+.menu-text:hover{
+    cursor: pointer;
+    text-decoration: underline 2px solid rgb(175, 175, 175);
+    text-underline-offset: 6px;
+}
+.adress p, .phone-number{
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    font-weight: 400;
+}
+.phone-number:hover{
+    cursor: pointer;
+    text-decoration: underline 2px solid rgb(175, 175, 175);
+    text-underline-offset: 6px;
+}
+.fake-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.fake-title i{
+    font-size: 18px;
+}
+.first-fake-side{
+    display: flex;
+    flex-direction: column;
+}
+.phone-number{
+    margin-top: 20px;
+}
+.adress{
+    margin-top: 5px; 
+    line-height: 1.4;
+}
+.end-menus{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.last-menu-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 50px;
+    flex-wrap: wrap;
+}
+.last-menu-column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 220px;
 }
 
 
@@ -1522,6 +1614,25 @@ body{
     .back-to-thetop-btn i{
         font-size: 18px;
     }
+
+    .end-section{
+        background-color: #1b1b1b;
+        color: white;
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .fake-left-side{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 0.5px solid rgb(65, 65, 65); /* remove at 1025px */
+        padding-bottom: 80px;
+        gap: 200px;
+    }
+    .fake-title p{
+        font-size: 22px;
+        font-weight: 600;
+    }
 }
 
 
@@ -1858,5 +1969,57 @@ body{
     }
     .back-to-thetop-btn i{
         font-size: 18px;
+    }
+
+    
+    .end-section{
+        background-color: #1b1b1b;
+        color: white;
+        padding: 50px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .fake-left-side{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        border: none;
+        gap: 50px;
+    }
+    .fake-title p, .menu-title{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .adress{
+        margin-top: 14px;
+    }
+    .menu-text{
+    font-weight: 600;
+    }
+
+    .end-menus{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 12%;
+    }
+    .last-menu-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 0px;
+    }
+    .last-menu-column{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 220px;
+    margin-top: 0;
+    }
+    .margin{
+    margin-top: 30px;
     }
 }
