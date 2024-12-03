@@ -12,9 +12,6 @@ a{
     text-decoration: none;
     color: initial;
 }
-body{
-    height: 20000px;
-}
 .round-icon{
     flex-shrink: 0;
     flex-grow: 0;
@@ -968,6 +965,33 @@ body{
     gap: 10px;
     margin-top: 30px;
     width: 220px;
+}
+
+
+.footer-img{
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1b1b;
+}
+.turtle{
+    margin-left: 20px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 5px;
+}
+.footer p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.footer p:hover{
+    cursor: pointer;
 }
 
 
@@ -2021,5 +2045,23 @@ body{
     }
     .margin{
     margin-top: 30px;
+    }
+
+
+    .footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    gap: 5px;
+    }
+    .turtle{
+    margin-left: 40px
+    };
+    .footer p:hover{
+    text-decoration: 1px solid underline white;
+    text-underline-offset: 5px;
     }
 }
